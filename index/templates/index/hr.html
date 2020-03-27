@@ -1,0 +1,40 @@
+<div>
+    <hr>
+    <table class="hr">
+        <tbody>
+        <tr>
+            <td>
+                商业合作
+            </td>
+            <td style="width: 70%">
+                <div id="details">
+                    作品直接发邮箱,签约后给钱
+                </div>
+            </td>
+            <td>
+                <table style="width: 100%">
+                    <tr><td>加入我们</td></tr>
+                    {% for hr in hrs %}
+                        <tr id="hr_name_{{ hr.id }}"><td><span>{{ hr.name }}</span></td></tr>
+                        <script>
+                            $("#hr_name_{{ hr.id }}").mouseover(function(){
+                                $("#details").finish();
+                                $("#details").hide();
+                                $("#details").html("{{ hr.desc }}");
+                                $("#details").fadeIn();
+                            });
+                            $("#hr_name_{{ hr.id }}").mouseout(function(){
+                                $("#details").finish();
+                                $("#details").hide();
+                                $("#details").html("作品直接发邮箱,签约后给钱");
+                                $("#details").fadeIn();
+                            });
+                        </script>
+                    {% endfor %}
+                </table>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <hr>
+</div>

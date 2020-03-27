@@ -1,0 +1,21 @@
+{% load static %}
+<div>
+    <table id="staffs">
+        <tbody>
+        {% for staffs in staffs_list %}
+            <tr>
+                {% for staff in staffs %}
+                    <td>
+                        <div style="position: relative;">
+                            <div style="position: absolute;">
+                                <img src="{{  staff.image_hover.url}}"   id="staff_img"/>
+                            </div>
+                            <img src="{{  staff.image.url}}">
+                        </div>
+                    </td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>

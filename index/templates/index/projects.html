@@ -1,0 +1,19 @@
+{% load staticfiles %}
+
+<div class="swiper-container project_gallery">
+    <div class="swiper-wrapper">
+        {% for project in projects %}
+            {% if project.id|divisibleby:2 %}
+                <div class="swiper-slide pjhigh"><a href="#2" class="click_pj-{{ project.id }}" onclick="showPjDesc({{ project.id }});"><span>{{ project.name }},{{ project.desc }}</span><img src="{{ project.image.url}}" ></a> </div>
+            {% else %}
+                <div class="swiper-slide"><a href="#2" class=click_pj-{{ project.id }}" onclick="showPjDesc({{ project.id }});"><span>{{ project.name }},{{ project.desc }}</span><img src="{{ project.image.url}}"></a> </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+    {#导航按钮#}
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+
+<div id="pjdesc">
+</div>

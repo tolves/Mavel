@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+h2 {
+    display: block;
+    padding-top: 300px;
+    font: 50px "Microsoft Yahei";
+    color: #000000;
+    text-align: center;
+}
+
+p {
+    margin-top: 20px;
+    font: 30px "Microsoft Yahei";
+    color: #fff;
+    text-align: center;
+}
+
+body {
+    background: black;
+    /*background: white url("http://placekitten.com/g/1920/5240") no-repeat;*/
+    /*background-size: contain;*/
+}
+
+#bg_1 {
+    background:  url("../images/bg1.jpg") no-repeat;
+    background-size: 100%;
+
+}
+
+#bg_2 {
+    background:  url("../images/bg2.jpg") no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+#bg_3 {
+    background:  url("../images/bg3.jpg") no-repeat;
+    background-size: 100%;
+}
+
+#float_panda {
+    position: fixed;
+    top: 60%;
+    left: 80%;
+}
+
+.appear-* {
+    position: absolute;
+}
+
+.sub-content {
+    font-size: 30px;
+    line-height: 1.25;
+    padding: 20px 40px;
+    width: 50%;
+    min-width: 200px;
+    max-width: 500px;
+    color: #fff;
+    background: #000;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#flowchart {
+    margin-top: 2%;
+    padding-left: 30%;
+}
+
+#logo {
+    position: absolute;
+    margin: 5%;
+    z-index: 999;
+}
+
+#footer {
+    /*position: relative;*/
+    margin: 0 auto;
+}
+
+#staff_img {
+
+}
+#staff_img:hover {
+    transition-duration: 1000ms;
+    opacity: 0;
+}
+
+#pjdesc {
+    background: #ffffff;
+    border: 5px solid rgba(0, 0, 0, 0.4);
+    height: 46%;
+    top: 4%;
+    margin: 0 5% auto;
+    padding: 1px;
+    width: 90%;
+    /*left: 5%;*/
+    position: absolute;
+    z-index: 5;
+    border-radius: 5px;
+    display: none;
+}
+
+#pjdesc p {
+}
+
+#pjdesc p.close {
+    text-align: right;
+    padding-right: 10px;
+}
+
+#pjdesc p.close a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.project_gallery {
+    top: 17%;
+    width: 77%;
+}
+
+.pjhigh {
+    top:30%
+}
+
+#staffs {
+    margin: 0 auto;
+}
+
+#staffs td{
+    padding: 10%;
+}
+
+
+.arrow {
+    position: absolute;
+    width: 50px;
+    padding-left: 48.5%;
+    padding-top: 43%;
+}
+
+.swiper-slide span {
+    display:none;
+    opacity: 0;
+    position:absolute;
+}
+
+
+.swiper-slide a:hover img{
+    transition-duration: 1000ms;
+    opacity: 0.4;
+}
+
+.swiper-slide a:hover span{
+    transition-duration: 3000ms;
+    display:inline;
+    opacity: 1;
+}
+
+.hr{
+    width: 60%;
+    margin: 20% auto 5%;
+}
+
+.hr td, .hr th {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 8px;
+}

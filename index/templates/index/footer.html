@@ -1,0 +1,24 @@
+{% load static %}
+
+<hr>
+
+<table id="links">
+    <tbody>
+    {% for link in links %}
+        <tr>
+            {% for l in link %}
+                <td>
+                    <a href="{{ l.link }}" title="{{ l.name }}"><img src="{{  l.image.url}}"/></a>
+                </td>
+            {% endfor %}
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+<hr>
+
+<footer id="footer">
+    <p>Powered by: Mavel Studio</p>
+    <p>This is footer</p>
+</footer>
